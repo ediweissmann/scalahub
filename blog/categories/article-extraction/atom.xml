@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: article extraction | ScalaHub]]></title>
+  <link href="http://ediweissmann.github.com/scalahub/blog/categories/article-extraction/atom.xml" rel="self"/>
+  <link href="http://ediweissmann.github.com/scalahub/"/>
+  <updated>2012-12-09T22:35:13+01:00</updated>
+  <id>http://ediweissmann.github.com/scalahub/</id>
+  <author>
+    <name><![CDATA[Edi Weissmann]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Goose - Article extractor]]></title>
+    <link href="http://ediweissmann.github.com/scalahub/blog/2012/12/09/goose-article-extractor/"/>
+    <updated>2012-12-09T22:15:00+01:00</updated>
+    <id>http://ediweissmann.github.com/scalahub/blog/2012/12/09/goose-article-extractor</id>
+    <content type="html"><![CDATA[<p>In a nutshell, point <a href="https://github.com/jiminoc/goose">Goose</a> to an url and it will extract the <strong>plain text</strong> of the article, along with the <strong>main image</strong>,  embedded <strong>movies</strong> and <strong>meta information</strong> that it finds (tags, publish date). Awesome stuff, right?</p>
+
+<p>Checkout <a href="http://jimplush.com/blog/goose">the live demo page</a> where you can play with parsing an url of your choice.</p>
+
+<p><code>scala
+val goose = new Goose(new Configuration)
+val article = goose.extractContent(url)
+println(article.cleanedArticleText)
+println(article.title)
+println(article.tags)
+</code></p>
+
+<p><a href="https://github.com/jiminoc/goose">Goose</a> is created by <a href="http://jimplush.com/">Jim Plush</a> from <a href="http://gravity.com">Gravity.com</a> Maven dependency is available.</p>
+]]></content>
+  </entry>
+  
+</feed>
