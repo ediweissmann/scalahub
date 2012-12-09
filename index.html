@@ -9,7 +9,7 @@
   <meta name="author" content="Edi Weissmann">
 
   
-  <meta name="description" content="Goose - Article Extractor Dec 9th, 2012 In a nutshell, point Goose to an url and it will extract the plain text of the article, along with the main &hellip;">
+  <meta name="description" content="Goose - Article Extractor Dec 9th, 2012 Goose is an article extractor written in Scala. Point it to an url and it will extract the plain text of the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,24 +91,28 @@
   </header>
 
 
-  <div class="entry-content"><p>In a nutshell, point <a href="https://github.com/jiminoc/goose">Goose</a> to an url and it will extract the <strong>plain text</strong> of the article, along with the <strong>main image</strong>,  embedded <strong>movies</strong> and <strong>meta information</strong> that it finds (tags, publish date). Awesome stuff, right?</p>
+  <div class="entry-content"><p><a href="https://github.com/jiminoc/goose">Goose</a> is an article extractor written in Scala. Point it to an url and it will extract the <strong>plain text</strong> of the article, along with the <strong>main image</strong>,  embedded <strong>movies</strong> and <strong>meta information</strong> that it finds (tags, publish date). Awesome stuff, right?</p>
 
-<p>Checkout <a href="http://jimplush.com/blog/goose">the live demo page</a> where you can play with parsing an url of your choice.</p>
+<p>Here&#8217;s an example of how to use it (It&#8217;s this simple!):</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
+<span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">goose</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Goose</span><span class="o">(</span><span class="k">new</span> <span class="nc">Configuration</span><span class="o">)</span>
 </span><span class='line'><span class="k">val</span> <span class="n">article</span> <span class="k">=</span> <span class="n">goose</span><span class="o">.</span><span class="n">extractContent</span><span class="o">(</span><span class="n">url</span><span class="o">)</span>
+</span><span class='line'>
 </span><span class='line'><span class="n">println</span><span class="o">(</span><span class="n">article</span><span class="o">.</span><span class="n">cleanedArticleText</span><span class="o">)</span>
 </span><span class='line'><span class="n">println</span><span class="o">(</span><span class="n">article</span><span class="o">.</span><span class="n">title</span><span class="o">)</span>
 </span><span class='line'><span class="n">println</span><span class="o">(</span><span class="n">article</span><span class="o">.</span><span class="n">tags</span><span class="o">)</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><a href="https://github.com/jiminoc/goose">Goose</a> is created by <a href="http://jimplush.com/">Jim Plush</a> from <a href="http://gravity.com">Gravity.com</a> Maven/SBT dependency is available.</p>
+<p>Checkout <a href="http://jimplush.com/blog/goose">the live demo page</a> where you can play with parsing an url of your choice.</p>
+
+<p><a href="https://github.com/jiminoc/goose">Goose</a> is created by <a href="http://jimplush.com/">Jim Plush</a> from <a href="http://gravity.com">Gravity.com</a> Maven/SBT dependency is available for quick use in your project.</p>
 </div>
   
   <a class="github" href="https://github.com/jiminoc/goose">Source on GitHub</a>
