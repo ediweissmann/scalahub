@@ -1,6 +1,25 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+.entry-content a {
+   	color: #0D94C9;
+   	background-color: #F6FCFE;
+   	padding-left: 5px;
+   	padding-right: 5px;
+   }
+
+  a.github:before {
+  	content: url(/images/github-icon.png);
+    vertical-align: top;
+    float:left;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  
+  a.github {
+  	margin-top: -5px;
+  }
+
 $border-ep: #E0E0E0;
 html {
      background: url("http://i.minus.com/ibuElAZkI9CQ3Y.gif") repeat-x scroll center top $page-bg;
@@ -76,16 +95,4 @@ html {
      > div {
        border-bottom: 0px solid $page-border-bottom;
    }
-
-  a.github:before {
-  	content: url(/images/github-icon.png);
-    vertical-align: top;
-    float:left;
-    margin-right: 5px;
-    margin-top: 3px;
-  }
-  
-  a.github {
-  	margin-top: -5px;
-  }
 }
