@@ -2,10 +2,10 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/scalahub/"
+http_images_path = "/scalahub/images"
+http_fonts_path = "/scalahub/fonts"
+css_dir = "public/scalahub/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
