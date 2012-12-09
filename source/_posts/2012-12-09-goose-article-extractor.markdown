@@ -20,6 +20,6 @@ println(article.title)
 println(article.tags)
 ```
 
-[Goose](https://github.com/jiminoc/goose) is created by [Jim Plush](http://jimplush.com/) from [Gravity.com](http://gravity.com) Maven dependency is available.
+[Goose](https://github.com/jiminoc/goose) is created by [Jim Plush](http://jimplush.com/) from [Gravity.com](http://gravity.com) Maven/SBT dependency is available.
 
 

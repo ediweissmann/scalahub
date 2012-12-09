@@ -77,5 +77,15 @@ html {
        border-bottom: 0px solid $page-border-bottom;
    }
 
-
+  a.github:before {
+  	content: url(/images/github-icon.png);
+    vertical-align: top;
+    float:left;
+    margin-right: 5px;
+    margin-top: 3px;
+  }
+  
+  a.github {
+  	margin-top: -5px;
+  }
 }
