@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: programming game | ScalaHub]]></title>
+  <link href="http://scalahub.com//blog/categories/programming-game/atom.xml" rel="self"/>
+  <link href="http://scalahub.com//"/>
+  <updated>2012-12-10T23:03:57+01:00</updated>
+  <id>http://scalahub.com//</id>
+  <author>
+    <name><![CDATA[Edi Weissmann]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Scalatron - Learn Scala With Friends]]></title>
+    <link href="http://scalahub.com//blog/2012/12/10/scalatron-learn-scala-with-friends/"/>
+    <updated>2012-12-10T22:22:00+01:00</updated>
+    <id>http://scalahub.com//blog/2012/12/10/scalatron-learn-scala-with-friends</id>
+    <content type="html"><![CDATA[<p><img src="http://farm6.staticflickr.com/5141/5681410224_50ff7e4c8d_m.jpg" alt="Bots" /></p>
+
+<p><a href="https://github.com/scalatron/scalatron">Scalatron</a> is a <strong>programming game</strong> in which <strong>bots</strong>, written in Scala, compete against each other in a <strong>virtual arena</strong>.</p>
+
+<p>Sounds like <strong>fun</strong>, how would that work?</p>
+
+<blockquote><p>…get together with some friends, set up a server, attach a projector, order some pizza and start hacking! A Scalatron hack-a-thon may be the quickest and most entertaining way to get a group of programmers into Scala.</p></blockquote>
+
+<p>The <a href="https://github.com/scalatron/scalatron/blob/master/Scalatron/doc/markdown/Scalatron%20Game%20Rules.md">rules of the game</a> are clearly explained in the docs, so you can figure out how to code the Master bot with his Mini-bots and their interactions with Fluppet, Snorg, Zugar, and Toxifera.</p>
+
+<p>You can also <a href="https://github.com/scalatron/scalatron/tree/master/Scalatron/samples">checkout the samples</a> to get a better feeling on <strong>how a bot would get coded</strong>.</p>
+
+<p>A Scalatron evening sure sounds like fun, so <a href="https://www.google.com/search?q=scalatron%20site:meetup.com">checkout if there's one happening in your area</a>, or maybe even host one?</p>
+]]></content>
+  </entry>
+  
+</feed>
