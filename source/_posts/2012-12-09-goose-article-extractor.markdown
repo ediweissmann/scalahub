@@ -23,6 +23,6 @@ println(article.tags)
 
 Checkout [the live demo page](http://jimplush.com/blog/goose) where you can play with parsing an url of your choice.
 
-[Goose](https://github.com/jiminoc/goose) is created by [Jim Plush](http://jimplush.com/) from [Gravity.com](http://gravity.com) Maven/SBT dependency is available for quick use in your project.
+[Goose](https://github.com/jiminoc/goose) is created by [Jim Plush](http://jimplush.com/) from [Gravity.com](http://gravity.com) Maven/SBT dependency is available in MavenCentral for quick use in your project.
 
 
