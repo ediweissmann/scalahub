@@ -4,7 +4,7 @@
   <title><![CDATA[ScalaHub]]></title>
   <link href="http://scalahub.com//atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2012-12-10T00:05:34+01:00</updated>
+  <updated>2012-12-10T21:36:51+01:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Travis CI - Continuous integration for your open source scala project]]></title>
+    <link href="http://scalahub.com//blog/2012/12/10/travis-ci-continuous-integration-for-your-open-source-scala-project/"/>
+    <updated>2012-12-10T20:32:00+01:00</updated>
+    <id>http://scalahub.com//blog/2012/12/10/travis-ci-continuous-integration-for-your-open-source-scala-project</id>
+    <content type="html"><![CDATA[<p><img src="http://scalahub.com//images/travis-ci.jpeg" alt="Travis CI logo" /></p>
+
+<p>Do you have an open source project written in Scala? (Well done!) <a href="http://travis-ci.org">Travis CI</a> offers a hosted continuous integration for the open source community, and <a href="http://about.travis-ci.org/docs/user/languages/scala/">they support Scala projects</a>.</p>
+
+<p>Setting up continuous integration with <a href="http://github.com/">GitHub</a> is super-easy. Simply add a <code>.travis.yml</code> file to your project, telling Travis that it&#8217;s written in Scala, and optionally defining the Scala version to use. That&#8217;s it! Travis is pretty smart and will figure out by itself if you chose SBT or Maven :)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="n">language</span><span class="k">:</span> <span class="kt">scala</span>
+</span><span class='line'><span class="n">scala</span><span class="k">:</span>
+</span><span class='line'>   <span class="kt">-</span> <span class="err">2</span><span class="kt">.</span><span class="err">8</span><span class="kt">.</span><span class="err">2</span>
+</span><span class='line'>   <span class="kt">-</span> <span class="err">2</span><span class="kt">.</span><span class="err">9</span><span class="kt">.</span><span class="err">2</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then, simply log in to <a href="http://travis-ci.org">travis-ci.org</a> with your GitHub account and enable continuous integration for your project <a href="https://travis-ci.org/profile">from the Travis profile page</a>.</p>
+
+<p>Once authorized to your GitHub account, Travis will add a commit hook that builds your project each time you commit code.
+A nice touch is adding the Travis CI build status to your README file <a href="http://about.travis-ci.org/docs/user/status-images/">by using the build status images</a>, like the one below.</p>
+
+<p><img src="https://secure.travis-ci.org/ediweissmann/metrics-statsmix.png?branch=master" alt="Travis build status" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Goose - Article extractor]]></title>
