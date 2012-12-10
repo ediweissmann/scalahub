@@ -1,23 +1,26 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+$fontAwesomePath: "fontawesome-webfont";
+@import "font-awesome";
+
 .entry-content a {
    	color: #0D94C9;
    	background-color: #F6FCFE;
    	padding-left: 5px;
    	padding-right: 5px;
    }
-
-  a.github:before {
-  	content: url(/images/github-icon.png);
-    vertical-align: top;
-    float:left;
-    margin-right: 5px;
-    margin-top: 3px;
+  
+  a.projectHomepage,a.github {
+  	color: #AD4E00;
   }
   
-  a.github {
-  	margin-top: -5px;
+  a.projectHomepage:hover,a.github:hover {
+  	text-decoration: none;
+  }
+  
+  a.projectHomepage {
+  	margin-left: 20px;
   }
 
 $border-ep: #E0E0E0;
