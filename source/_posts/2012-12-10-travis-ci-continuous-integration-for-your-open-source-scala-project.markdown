@@ -4,6 +4,7 @@ title: "Travis CI - Continuous integration for your open source scala project"
 date: 2012-12-10 20:32
 comments: true
 categories: continuous integration
+projectHomepage: http://travis-ci.org/
 ---
 
 ![Travis CI logo](/images/travis-ci.jpeg)
