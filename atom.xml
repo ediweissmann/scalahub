@@ -4,7 +4,7 @@
   <title><![CDATA[ScalaHub]]></title>
   <link href="http://scalahub.com//atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2012-12-10T23:15:00+01:00</updated>
+  <updated>2012-12-11T21:41:25+01:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[scala-ssh - Remote shell access via SSH]]></title>
+    <link href="http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh/"/>
+    <updated>2012-12-11T21:34:00+01:00</updated>
+    <id>http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/sirthias/scala-ssh">scala-ssh</a> provides remote shell access via SSH for your Scala applications.</p>
+
+<p>Besides remote execution of shell commands, you get access to <code>stdin</code>, <code>stdout</code> and <code>stderr</code>, private key authentication and host configuration via code or from resource file.</p>
+
+<p>Here&#8217;s a simple example of how to use the API:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">SSH</span><span class="o">(</span><span class="s">&quot;repl.scalahub.com&quot;</span><span class="o">)</span> <span class="o">{</span> <span class="n">client</span> <span class="k">=&gt;</span>
+</span><span class='line'>  <span class="n">client</span><span class="o">.</span><span class="n">exec</span><span class="o">(</span><span class="s">&quot;scala --version&quot;</span><span class="o">).</span><span class="n">right</span><span class="o">.</span><span class="n">map</span> <span class="o">{</span> <span class="n">res</span> <span class="k">=&gt;</span>
+</span><span class='line'>    <span class="n">println</span><span class="o">(</span><span class="s">&quot;And the scala version is... [drums]... \n&quot;</span> <span class="o">+</span> <span class="n">res</span><span class="o">.</span><span class="n">stdOutAsString</span><span class="o">())</span>
+</span><span class='line'>  <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/sirthias/scala-ssh">scala-ssh</a> is written by <a href="https://github.com/sirthias">Mathias</a> from <a href="http://spray.io">Spray.io</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Scalatron - Learn Scala With Friends]]></title>
