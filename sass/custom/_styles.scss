@@ -55,7 +55,7 @@ html {
 
     a {
       @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
-      text-shadow: 2px 2px 2px  #0F3B6A;
+      xtext-shadow: 2px 2px 2px  #0F3B6A;
       color:#fff;
       float: left;
       text-decoration: none;
@@ -99,4 +99,9 @@ html {
      > div {
        border-bottom: 0px solid $page-border-bottom;
    }
+}
+
+#about-section p {
+	font-size: 120%;
+	line-height: 150%;
 }

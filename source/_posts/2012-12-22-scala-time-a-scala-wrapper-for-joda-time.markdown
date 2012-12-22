@@ -10,7 +10,7 @@ gitHubUrl: https://github.com/scalaj/scalaj-time
 
 [scalaj-time](https://github.com/jorgeortiz85/scala-time) is a scala **convenience wrapper** around the [Joda time](http://joda-time.sourceforge.net/) libraries.
 
-It provides more **pleasant syntax** like operators addition, subtraction and comparison, and also, fields are now available in the Scala convention, without the "get" prefix.
+It provides more **pleasant syntax** operators: addition, subtraction and comparison, and also, fields are now available in the Scala convention, without the "get" prefix.
 
 Here's some example usage:
 
