@@ -4,7 +4,7 @@
   <title><![CDATA[ScalaHub]]></title>
   <link href="http://scalahub.com//atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2012-12-11T21:41:25+01:00</updated>
+  <updated>2012-12-22T16:14:04+02:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -14,9 +14,55 @@
 
   
   <entry>
+    <title type="html"><![CDATA[scalaj-time - A Scala Wrapper For Joda Time]]></title>
+    <link href="http://scalahub.com//blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time/"/>
+    <updated>2012-12-22T12:52:00+02:00</updated>
+    <id>http://scalahub.com//blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time</id>
+    <content type="html"><![CDATA[<p><img src="http://farm5.staticflickr.com/4017/4469802928_3a9405be0d_n.jpg" alt="Alarm clock" /></p>
+
+<p><a href="https://github.com/jorgeortiz85/scala-time">scalaj-time</a> is a scala <strong>convenience wrapper</strong> around the <a href="http://joda-time.sourceforge.net/">Joda time</a> libraries.</p>
+
+<p>It provides more <strong>pleasant syntax</strong> like operators addition, subtraction and comparison, and also, fields are now available in the Scala convention, without the &#8220;get&#8221; prefix.</p>
+
+<p>Here&#8217;s some example usage:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">import</span> <span class="nn">org.scala_tools.time.Imports._</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="c1">// returns org.joda.time.DateTime</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mf">2.</span><span class="n">months</span> <span class="c1">// two months from now</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">nextMonth</span> <span class="o">&lt;</span> <span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mf">2.</span><span class="n">months</span> <span class="c1">// true</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="n">to</span> <span class="nc">DateTime</span><span class="o">.</span><span class="n">tomorrow</span> <span class="c1">// returns an org.joda.time.Interval</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">(</span><span class="mf">1.</span><span class="n">hours</span> <span class="o">+</span> <span class="mf">25.</span><span class="n">minutes</span> <span class="o">+</span> <span class="mf">15.</span><span class="n">seconds</span><span class="o">).</span><span class="n">millis</span> <span class="c1">// returns org.joda.time.Duration</span>
+</span><span class='line'>
+</span><span class='line'><span class="mf">9.</span><span class="n">months</span> <span class="o">+</span> <span class="mf">3.d</span><span class="n">ays</span> <span class="c1">// returns org.joda.time.Period</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/jorgeortiz85/scala-time">scalaj-time</a> is created by <a href="https://github.com/jorgeortiz85">Jorge Ortiz</a> from <a href="https://github.com/scalaj">scalaj</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[scala-ssh - Remote shell access via SSH]]></title>
     <link href="http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh/"/>
-    <updated>2012-12-11T21:34:00+01:00</updated>
+    <updated>2012-12-11T21:34:00+02:00</updated>
     <id>http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/sirthias/scala-ssh">scala-ssh</a> provides remote shell access via SSH for your Scala applications.</p>
 
@@ -44,7 +90,7 @@
   <entry>
     <title type="html"><![CDATA[Scalatron - Learn Scala With Friends]]></title>
     <link href="http://scalahub.com//blog/2012/12/10/scalatron-learn-scala-with-friends/"/>
-    <updated>2012-12-10T22:22:00+01:00</updated>
+    <updated>2012-12-10T22:22:00+02:00</updated>
     <id>http://scalahub.com//blog/2012/12/10/scalatron-learn-scala-with-friends</id>
     <content type="html"><![CDATA[<p><img src="http://farm6.staticflickr.com/5141/5681410224_50ff7e4c8d_m.jpg" alt="Bots" /></p>
 
@@ -65,7 +111,7 @@
   <entry>
     <title type="html"><![CDATA[Travis CI - Continuous integration for your open source scala project]]></title>
     <link href="http://scalahub.com//blog/2012/12/10/travis-ci-continuous-integration-for-your-open-source-scala-project/"/>
-    <updated>2012-12-10T20:32:00+01:00</updated>
+    <updated>2012-12-10T20:32:00+02:00</updated>
     <id>http://scalahub.com//blog/2012/12/10/travis-ci-continuous-integration-for-your-open-source-scala-project</id>
     <content type="html"><![CDATA[<p><img src="http://scalahub.com//images/travis-ci.jpeg" alt="Travis CI logo" /></p>
 
@@ -96,7 +142,7 @@ A nice touch is adding the Travis CI build status to your README file <a href="h
   <entry>
     <title type="html"><![CDATA[Goose - Article extractor]]></title>
     <link href="http://scalahub.com//blog/2012/12/09/goose-article-extractor/"/>
-    <updated>2012-12-09T22:15:00+01:00</updated>
+    <updated>2012-12-09T22:15:00+02:00</updated>
     <id>http://scalahub.com//blog/2012/12/09/goose-article-extractor</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/jiminoc/goose">Goose</a> is an article extractor written in Scala. Point it to an url and it will extract the <strong>plain text</strong> of the article, along with the <strong>main image</strong>,  embedded <strong>movies</strong> and <strong>meta information</strong> that it finds (tags, publish date). Awesome stuff, right?</p>
 

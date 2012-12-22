@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ssh | ScalaHub]]></title>
   <link href="http://scalahub.com//blog/categories/ssh/atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2012-12-11T21:41:25+01:00</updated>
+  <updated>2012-12-22T16:14:04+02:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[scala-ssh - Remote shell access via SSH]]></title>
     <link href="http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh/"/>
-    <updated>2012-12-11T21:34:00+01:00</updated>
+    <updated>2012-12-11T21:34:00+02:00</updated>
     <id>http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/sirthias/scala-ssh">scala-ssh</a> provides remote shell access via SSH for your Scala applications.</p>
 

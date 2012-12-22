@@ -9,7 +9,7 @@
   <meta name="author" content="Edi Weissmann">
 
   
-  <meta name="description" content="Scala-ssh - Remote Shell Access via SSH Dec 11th, 2012 scala-ssh provides remote shell access via SSH for your Scala applications. Besides remote &hellip;">
+  <meta name="description" content="Scalaj-time - a Scala Wrapper for Joda Time Dec 22nd, 2012 scalaj-time is a scala convenience wrapper around the Joda time libraries. It provides &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,81 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time/">Scalaj-time - a Scala Wrapper for Joda Time</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-22T12:52:00+02:00" pubdate data-updated="true">Dec 22<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="http://farm5.staticflickr.com/4017/4469802928_3a9405be0d_n.jpg" alt="Alarm clock" /></p>
+
+<p><a href="https://github.com/jorgeortiz85/scala-time">scalaj-time</a> is a scala <strong>convenience wrapper</strong> around the <a href="http://joda-time.sourceforge.net/">Joda time</a> libraries.</p>
+
+<p>It provides more <strong>pleasant syntax</strong> like operators addition, subtraction and comparison, and also, fields are now available in the Scala convention, without the &#8220;get&#8221; prefix.</p>
+
+<p>Here&#8217;s some example usage:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">import</span> <span class="nn">org.scala_tools.time.Imports._</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="c1">// returns org.joda.time.DateTime</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mf">2.</span><span class="n">months</span> <span class="c1">// two months from now</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">nextMonth</span> <span class="o">&lt;</span> <span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mf">2.</span><span class="n">months</span> <span class="c1">// true</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">DateTime</span><span class="o">.</span><span class="n">now</span> <span class="n">to</span> <span class="nc">DateTime</span><span class="o">.</span><span class="n">tomorrow</span> <span class="c1">// returns an org.joda.time.Interval</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">(</span><span class="mf">1.</span><span class="n">hours</span> <span class="o">+</span> <span class="mf">25.</span><span class="n">minutes</span> <span class="o">+</span> <span class="mf">15.</span><span class="n">seconds</span><span class="o">).</span><span class="n">millis</span> <span class="c1">// returns org.joda.time.Duration</span>
+</span><span class='line'>
+</span><span class='line'><span class="mf">9.</span><span class="n">months</span> <span class="o">+</span> <span class="mf">3.d</span><span class="n">ays</span> <span class="c1">// returns org.joda.time.Period</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/jorgeortiz85/scala-time">scalaj-time</a> is created by <a href="https://github.com/jorgeortiz85">Jorge Ortiz</a> from <a href="https://github.com/scalaj">scalaj</a>.</p>
+</div>
+  
+  <a class="github" href="https://github.com/scalaj/scalaj-time"><i class="icon-github"> </i> Source on GitHub</a>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh/">Scala-ssh - Remote Shell Access via SSH</a></h1>
     
     
@@ -84,7 +159,7 @@
   
 
 
-<time datetime="2012-12-11T21:34:00+01:00" pubdate data-updated="true">Dec 11<span>th</span>, 2012</time>
+<time datetime="2012-12-11T21:34:00+02:00" pubdate data-updated="true">Dec 11<span>th</span>, 2012</time>
         
       </p>
     
@@ -141,7 +216,7 @@
   
 
 
-<time datetime="2012-12-10T22:22:00+01:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
+<time datetime="2012-12-10T22:22:00+02:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
         
       </p>
     
@@ -191,7 +266,7 @@
   
 
 
-<time datetime="2012-12-10T20:32:00+01:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
+<time datetime="2012-12-10T20:32:00+02:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
         
       </p>
     
@@ -251,7 +326,7 @@ A nice touch is adding the Travis CI build status to your README file <a href="h
   
 
 
-<time datetime="2012-12-09T22:15:00+01:00" pubdate data-updated="true">Dec 9<span>th</span>, 2012</time>
+<time datetime="2012-12-09T22:15:00+02:00" pubdate data-updated="true">Dec 9<span>th</span>, 2012</time>
         
       </p>
     
@@ -300,6 +375,10 @@ A nice touch is adding the Travis CI build status to your README file <a href="h
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time/">scalaj-time - A Scala Wrapper For Joda Time</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh/">scala-ssh - Remote shell access via SSH</a>
