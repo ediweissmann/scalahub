@@ -4,7 +4,7 @@
   <title><![CDATA[Category: time | ScalaHub]]></title>
   <link href="http://scalahub.com//blog/categories/time/atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2012-12-22T16:14:04+02:00</updated>
+  <updated>2012-12-22T23:17:26+02:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -22,7 +22,7 @@
 
 <p><a href="https://github.com/jorgeortiz85/scala-time">scalaj-time</a> is a scala <strong>convenience wrapper</strong> around the <a href="http://joda-time.sourceforge.net/">Joda time</a> libraries.</p>
 
-<p>It provides more <strong>pleasant syntax</strong> like operators addition, subtraction and comparison, and also, fields are now available in the Scala convention, without the "get" prefix.</p>
+<p>It provides more <strong>pleasant syntax</strong> operators: addition, subtraction and comparison, and also, fields are now available in the Scala convention, without the "get" prefix.</p>
 
 <p>Here's some example usage:</p>
 
