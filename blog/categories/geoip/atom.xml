@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: geoip | ScalaHub]]></title>
+  <link href="http://scalahub.com//blog/categories/geoip/atom.xml" rel="self"/>
+  <link href="http://scalahub.com//"/>
+  <updated>2013-01-07T23:17:18+01:00</updated>
+  <id>http://scalahub.com//</id>
+  <author>
+    <name><![CDATA[Edi Weissmann]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Scala client for MaxMind Geo-IP]]></title>
+    <link href="http://scalahub.com//blog/2013/01/07/scala-client-for-maxmind-geo-ip/"/>
+    <updated>2013-01-07T22:47:00+01:00</updated>
+    <id>http://scalahub.com//blog/2013/01/07/scala-client-for-maxmind-geo-ip</id>
+    <content type="html"><![CDATA[<p><img src="http://farm1.staticflickr.com/51/138297060_de2979e042.jpg" alt="You are here" /></p>
+
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is a scala wrapper for the <a href="http://dev.maxmind.com/geoip/">MaxMind</a> Java Geo-IP library.</p>
+
+<p>Besides the friendly <strong>Scala syntax</strong>, you get <strong>configurable LRU caching</strong> out of the box. And if you are using <code>SBT</code> there's built-in <strong>automagical update</strong> to the latest MaxMind <code>GeoLiteCity.dat</code> and Java client library version.</p>
+
+<p>Quick usage example:</p>
+
+<p>``` scala
+val geoDbFile = new java.io.File(getClass.getResource("/maxmind/GeoLiteCity.dat").toURI())
+val ipGeo = new IpGeo(dbFile = geoDbFile, lruCache = 100, memCache = false)</p>
+
+<p>for (loc &lt;- ipGeo.getLocation("204.232.175.78")) {
+  println(loc.countryCode)   // US
+  println(loc.countryName)   // United States
+}
+```</p>
+
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is written by <a href="https://github.com/snowplow">Snowplow</a> from <a href="http://snowplowanalytics.com">SnowPlow Analytics</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -9,7 +9,7 @@
   <meta name="author" content="Edi Weissmann">
 
   
-  <meta name="description" content="Scalaj-time - a Scala Wrapper for Joda Time Dec 22nd, 2012 scalaj-time is a scala convenience wrapper around the Joda time libraries. It provides &hellip;">
+  <meta name="description" content="Scala Client for MaxMind Geo-IP Jan 7th, 2013 scala-maxmind-geoip is a scala wrapper for the MaxMind Java Geo-IP library. Besides the friendly Scala &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,69 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/01/07/scala-client-for-maxmind-geo-ip/">Scala Client for MaxMind Geo-IP</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-07T22:47:00+01:00" pubdate data-updated="true">Jan 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="http://farm1.staticflickr.com/51/138297060_de2979e042.jpg" alt="You are here" /></p>
+
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is a scala wrapper for the <a href="http://dev.maxmind.com/geoip/">MaxMind</a> Java Geo-IP library.</p>
+
+<p>Besides the friendly <strong>Scala syntax</strong>, you get <strong>configurable LRU caching</strong> out of the box. And if you are using <code>SBT</code> there&#8217;s built-in <strong>automagical update</strong> to the latest MaxMind <code>GeoLiteCity.dat</code> and Java client library version.</p>
+
+<p>Quick usage example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">geoDbFile</span> <span class="k">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="nc">File</span><span class="o">(</span><span class="n">getClass</span><span class="o">.</span><span class="n">getResource</span><span class="o">(</span><span class="s">&quot;/maxmind/GeoLiteCity.dat&quot;</span><span class="o">).</span><span class="n">toURI</span><span class="o">())</span>
+</span><span class='line'><span class="k">val</span> <span class="n">ipGeo</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">IpGeo</span><span class="o">(</span><span class="n">dbFile</span> <span class="k">=</span> <span class="n">geoDbFile</span><span class="o">,</span> <span class="n">lruCache</span> <span class="k">=</span> <span class="mi">100</span><span class="o">,</span> <span class="n">memCache</span> <span class="k">=</span> <span class="kc">false</span><span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">for</span> <span class="o">(</span><span class="n">loc</span> <span class="k">&lt;-</span> <span class="n">ipGeo</span><span class="o">.</span><span class="n">getLocation</span><span class="o">(</span><span class="s">&quot;204.232.175.78&quot;</span><span class="o">))</span> <span class="o">{</span>
+</span><span class='line'>  <span class="n">println</span><span class="o">(</span><span class="n">loc</span><span class="o">.</span><span class="n">countryCode</span><span class="o">)</span>   <span class="c1">// US</span>
+</span><span class='line'>  <span class="n">println</span><span class="o">(</span><span class="n">loc</span><span class="o">.</span><span class="n">countryName</span><span class="o">)</span>   <span class="c1">// United States</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is written by <a href="https://github.com/snowplow">Snowplow</a> from <a href="http://snowplowanalytics.com">SnowPlow Analytics</a>.</p>
+</div>
+  
+  <a class="github" href="https://github.com/snowplow/scala-maxmind-geoip"><i class="icon-github"> </i> Source on GitHub</a>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time/">Scalaj-time - a Scala Wrapper for Joda Time</a></h1>
     
     
@@ -96,7 +159,7 @@
   
 
 
-<time datetime="2012-12-22T12:52:00+02:00" pubdate data-updated="true">Dec 22<span>nd</span>, 2012</time>
+<time datetime="2012-12-22T12:52:00+01:00" pubdate data-updated="true">Dec 22<span>nd</span>, 2012</time>
         
       </p>
     
@@ -171,7 +234,7 @@
   
 
 
-<time datetime="2012-12-11T21:34:00+02:00" pubdate data-updated="true">Dec 11<span>th</span>, 2012</time>
+<time datetime="2012-12-11T21:34:00+01:00" pubdate data-updated="true">Dec 11<span>th</span>, 2012</time>
         
       </p>
     
@@ -228,7 +291,7 @@
   
 
 
-<time datetime="2012-12-10T22:22:00+02:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
+<time datetime="2012-12-10T22:22:00+01:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
         
       </p>
     
@@ -278,7 +341,7 @@
   
 
 
-<time datetime="2012-12-10T20:32:00+02:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
+<time datetime="2012-12-10T20:32:00+01:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
         
       </p>
     
@@ -338,7 +401,7 @@ A nice touch is adding the Travis CI build status to your README file <a href="h
   
 
 
-<time datetime="2012-12-09T22:15:00+02:00" pubdate data-updated="true">Dec 9<span>th</span>, 2012</time>
+<time datetime="2012-12-09T22:15:00+01:00" pubdate data-updated="true">Dec 9<span>th</span>, 2012</time>
         
       </p>
     
@@ -393,6 +456,10 @@ A nice touch is adding the Travis CI build status to your README file <a href="h
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/01/07/scala-client-for-maxmind-geo-ip/">Scala client for MaxMind Geo-IP</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time/">scalaj-time - A Scala Wrapper For Joda Time</a>
       </li>
     
@@ -426,7 +493,7 @@ A nice touch is adding the Travis CI build status to your README file <a href="h
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Edi Weissmann -
+  Copyright &copy; 2013 - Edi Weissmann -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

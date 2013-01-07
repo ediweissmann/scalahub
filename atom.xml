@@ -4,7 +4,7 @@
   <title><![CDATA[ScalaHub]]></title>
   <link href="http://scalahub.com//atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2012-12-22T23:17:26+02:00</updated>
+  <updated>2013-01-07T23:17:18+01:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -14,9 +14,43 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Scala client for MaxMind Geo-IP]]></title>
+    <link href="http://scalahub.com//blog/2013/01/07/scala-client-for-maxmind-geo-ip/"/>
+    <updated>2013-01-07T22:47:00+01:00</updated>
+    <id>http://scalahub.com//blog/2013/01/07/scala-client-for-maxmind-geo-ip</id>
+    <content type="html"><![CDATA[<p><img src="http://farm1.staticflickr.com/51/138297060_de2979e042.jpg" alt="You are here" /></p>
+
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is a scala wrapper for the <a href="http://dev.maxmind.com/geoip/">MaxMind</a> Java Geo-IP library.</p>
+
+<p>Besides the friendly <strong>Scala syntax</strong>, you get <strong>configurable LRU caching</strong> out of the box. And if you are using <code>SBT</code> there&#8217;s built-in <strong>automagical update</strong> to the latest MaxMind <code>GeoLiteCity.dat</code> and Java client library version.</p>
+
+<p>Quick usage example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">geoDbFile</span> <span class="k">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="nc">File</span><span class="o">(</span><span class="n">getClass</span><span class="o">.</span><span class="n">getResource</span><span class="o">(</span><span class="s">&quot;/maxmind/GeoLiteCity.dat&quot;</span><span class="o">).</span><span class="n">toURI</span><span class="o">())</span>
+</span><span class='line'><span class="k">val</span> <span class="n">ipGeo</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">IpGeo</span><span class="o">(</span><span class="n">dbFile</span> <span class="k">=</span> <span class="n">geoDbFile</span><span class="o">,</span> <span class="n">lruCache</span> <span class="k">=</span> <span class="mi">100</span><span class="o">,</span> <span class="n">memCache</span> <span class="k">=</span> <span class="kc">false</span><span class="o">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">for</span> <span class="o">(</span><span class="n">loc</span> <span class="k">&lt;-</span> <span class="n">ipGeo</span><span class="o">.</span><span class="n">getLocation</span><span class="o">(</span><span class="s">&quot;204.232.175.78&quot;</span><span class="o">))</span> <span class="o">{</span>
+</span><span class='line'>  <span class="n">println</span><span class="o">(</span><span class="n">loc</span><span class="o">.</span><span class="n">countryCode</span><span class="o">)</span>   <span class="c1">// US</span>
+</span><span class='line'>  <span class="n">println</span><span class="o">(</span><span class="n">loc</span><span class="o">.</span><span class="n">countryName</span><span class="o">)</span>   <span class="c1">// United States</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is written by <a href="https://github.com/snowplow">Snowplow</a> from <a href="http://snowplowanalytics.com">SnowPlow Analytics</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[scalaj-time - A Scala Wrapper For Joda Time]]></title>
     <link href="http://scalahub.com//blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time/"/>
-    <updated>2012-12-22T12:52:00+02:00</updated>
+    <updated>2012-12-22T12:52:00+01:00</updated>
     <id>http://scalahub.com//blog/2012/12/22/scala-time-a-scala-wrapper-for-joda-time</id>
     <content type="html"><![CDATA[<p><img src="http://farm5.staticflickr.com/4017/4469802928_3a9405be0d_n.jpg" alt="Alarm clock" /></p>
 
@@ -62,7 +96,7 @@
   <entry>
     <title type="html"><![CDATA[scala-ssh - Remote shell access via SSH]]></title>
     <link href="http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh/"/>
-    <updated>2012-12-11T21:34:00+02:00</updated>
+    <updated>2012-12-11T21:34:00+01:00</updated>
     <id>http://scalahub.com//blog/2012/12/11/scala-ssh-remote-shell-access-via-ssh</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/sirthias/scala-ssh">scala-ssh</a> provides remote shell access via SSH for your Scala applications.</p>
 
@@ -90,7 +124,7 @@
   <entry>
     <title type="html"><![CDATA[Scalatron - Learn Scala With Friends]]></title>
     <link href="http://scalahub.com//blog/2012/12/10/scalatron-learn-scala-with-friends/"/>
-    <updated>2012-12-10T22:22:00+02:00</updated>
+    <updated>2012-12-10T22:22:00+01:00</updated>
     <id>http://scalahub.com//blog/2012/12/10/scalatron-learn-scala-with-friends</id>
     <content type="html"><![CDATA[<p><img src="http://farm6.staticflickr.com/5141/5681410224_50ff7e4c8d_m.jpg" alt="Bots" /></p>
 
@@ -111,7 +145,7 @@
   <entry>
     <title type="html"><![CDATA[Travis CI - Continuous integration for your open source scala project]]></title>
     <link href="http://scalahub.com//blog/2012/12/10/travis-ci-continuous-integration-for-your-open-source-scala-project/"/>
-    <updated>2012-12-10T20:32:00+02:00</updated>
+    <updated>2012-12-10T20:32:00+01:00</updated>
     <id>http://scalahub.com//blog/2012/12/10/travis-ci-continuous-integration-for-your-open-source-scala-project</id>
     <content type="html"><![CDATA[<p><img src="http://scalahub.com//images/travis-ci.jpeg" alt="Travis CI logo" /></p>
 
@@ -142,7 +176,7 @@ A nice touch is adding the Travis CI build status to your README file <a href="h
   <entry>
     <title type="html"><![CDATA[Goose - Article extractor]]></title>
     <link href="http://scalahub.com//blog/2012/12/09/goose-article-extractor/"/>
-    <updated>2012-12-09T22:15:00+02:00</updated>
+    <updated>2012-12-09T22:15:00+01:00</updated>
     <id>http://scalahub.com//blog/2012/12/09/goose-article-extractor</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/jiminoc/goose">Goose</a> is an article extractor written in Scala. Point it to an url and it will extract the <strong>plain text</strong> of the article, along with the <strong>main image</strong>,  embedded <strong>movies</strong> and <strong>meta information</strong> that it finds (tags, publish date). Awesome stuff, right?</p>
 
