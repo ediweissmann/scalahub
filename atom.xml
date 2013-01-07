@@ -4,7 +4,7 @@
   <title><![CDATA[ScalaHub]]></title>
   <link href="http://scalahub.com//atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2013-01-07T23:17:18+01:00</updated>
+  <updated>2013-01-07T23:21:29+01:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -43,7 +43,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is written by <a href="https://github.com/snowplow">Snowplow</a> from <a href="http://snowplowanalytics.com">SnowPlow Analytics</a>.</p>
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is written by <a href="https://github.com/alexanderdean">Alexander Dean</a> from <a href="http://snowplowanalytics.com">SnowPlow Analytics</a>.</p>
 ]]></content>
   </entry>
   
