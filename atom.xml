@@ -4,7 +4,7 @@
   <title><![CDATA[ScalaHub]]></title>
   <link href="http://scalahub.com//atom.xml" rel="self"/>
   <link href="http://scalahub.com//"/>
-  <updated>2013-01-07T23:21:29+01:00</updated>
+  <updated>2013-01-07T23:22:15+01:00</updated>
   <id>http://scalahub.com//</id>
   <author>
     <name><![CDATA[Edi Weissmann]]></name>
@@ -20,7 +20,7 @@
     <id>http://scalahub.com//blog/2013/01/07/scala-client-for-maxmind-geo-ip</id>
     <content type="html"><![CDATA[<p><img src="http://farm1.staticflickr.com/51/138297060_de2979e042.jpg" alt="You are here" /></p>
 
-<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is a scala wrapper for the <a href="http://dev.maxmind.com/geoip/">MaxMind</a> Java Geo-IP library.</p>
+<p><a href="https://github.com/snowplow/scala-maxmind-geoip">scala-maxmind-geoip</a> is a Scala wrapper for the <a href="http://dev.maxmind.com/geoip/">MaxMind</a> Java Geo-IP library.</p>
 
 <p>Besides the friendly <strong>Scala syntax</strong>, you get <strong>configurable LRU caching</strong> out of the box. And if you are using <code>SBT</code> there&#8217;s built-in <strong>automagical update</strong> to the latest MaxMind <code>GeoLiteCity.dat</code> and Java client library version.</p>
 
