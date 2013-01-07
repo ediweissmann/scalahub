@@ -8,7 +8,7 @@ gitHubUrl: https://github.com/snowplow/scala-maxmind-geoip
 ---
 ![You are here](http://farm1.staticflickr.com/51/138297060_de2979e042.jpg)
 
-[scala-maxmind-geoip](https://github.com/snowplow/scala-maxmind-geoip) is a scala wrapper for the [MaxMind](http://dev.maxmind.com/geoip/) Java Geo-IP library. 
+[scala-maxmind-geoip](https://github.com/snowplow/scala-maxmind-geoip) is a Scala wrapper for the [MaxMind](http://dev.maxmind.com/geoip/) Java Geo-IP library. 
 
 Besides the friendly **Scala syntax**, you get **configurable LRU caching** out of the box. And if you are using `SBT` there's built-in **automagical update** to the latest MaxMind `GeoLiteCity.dat` and Java client library version.
 
@@ -24,4 +24,4 @@ for (loc <- ipGeo.getLocation("204.232.175.78")) {
 }
 ```
 
-[scala-maxmind-geoip](https://github.com/snowplow/scala-maxmind-geoip) is written by [Snowplow](https://github.com/snowplow) from [SnowPlow Analytics](http://snowplowanalytics.com). 
+[scala-maxmind-geoip](https://github.com/snowplow/scala-maxmind-geoip) is written by [Alexander Dean](https://github.com/alexanderdean) from [SnowPlow Analytics](http://snowplowanalytics.com). 
