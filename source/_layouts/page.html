@@ -13,8 +13,6 @@ layout: default
   {{ content }}
   {% unless page.footer == false %}
     <footer>
-      {% if page.gitHubUrl %}<a class="github" href="{{ page.gitHubUrl }}"><i class="icon-github"> </i> Source on GitHub</a>{% endif %}
-      {% if page.projectHomepage %}<a class="projectHomepage" href="{{ page.projectHomepage }}"><i class="icon-home"> </i>Project Homepage</a>{% endif %}
       {% if page.date or page.author %}<p class="meta">
         {% if page.author %}{% include post/author.html %}{% endif %}
         {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}

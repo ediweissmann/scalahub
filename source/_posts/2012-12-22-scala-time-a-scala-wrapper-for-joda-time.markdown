@@ -3,8 +3,9 @@ layout: post
 title: "scalaj-time - A Scala Wrapper For Joda Time"
 date: 2012-12-22 12:52
 comments: true
-categories: [date, time]
-gitHubUrl: https://github.com/scalaj/scalaj-time
+categories: 
+gitHubUser: scalaj
+gitHubProject: scalaj-time
 ---
 ![Alarm clock](http://farm5.staticflickr.com/4017/4469802928_3a9405be0d_n.jpg)
 

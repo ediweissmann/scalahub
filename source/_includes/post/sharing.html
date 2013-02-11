@@ -1,6 +1,10 @@
 <div class="sharing">
+  {% if page.gitHubUser or post.gitHubUser %}
+  <iframe width="120" height="30" src="http://ghbtns.com/github-btn.html?user={{ page.gitHubUser }}{{ post.gitHubUser }}&repo={{ page.gitHubProject }}{{ post.gitHubProject }}&type=watch&count=true&size=large" frameborder="0" scrolling="0" allowtransparency="true"></iframe>
+  <iframe width="250" height="30" src="http://ghbtns.com/github-btn.html?user={{ page.gitHubUser }}{{ post.gitHubUser }}&type=follow&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0"></iframe>
+  {% endif %}
   {% if site.twitter_tweet_button %}
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-via="{{ site.twitter_user }}" data-counturl="{{ site.url }}{{ page.url }}" data-size="large" >Tweet</a>
   {% endif %}
   {% if site.google_plus_one %}
   <div class="g-plusone" data-size="{{ site.google_plus_one_size }}"></div>

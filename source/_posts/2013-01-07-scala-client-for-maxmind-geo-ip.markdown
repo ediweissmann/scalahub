@@ -3,8 +3,9 @@ layout: post
 title: "Scala client for MaxMind Geo-IP"
 date: 2013-01-07 22:47
 comments: true
-categories: [maxmind, geoip]
-gitHubUrl: https://github.com/snowplow/scala-maxmind-geoip
+categories: 
+gitHubUser: snowplow
+gitHubProject: scala-maxmind-geoip
 ---
 ![You are here](http://farm1.staticflickr.com/51/138297060_de2979e042.jpg)
 

@@ -3,8 +3,9 @@ layout: post
 title: "Scalatron - Learn Scala With Friends"
 date: 2012-12-10 22:22
 comments: true
-categories: [scalatron, programming game]
-gitHubUrl: https://github.com/scalatron/scalatron
+categories: 
+gitHubUser: scalatron
+gitHubProject: scalatron
 projectHomepage: http://scalatron.github.com/
 ---
 

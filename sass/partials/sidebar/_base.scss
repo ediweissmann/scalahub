@@ -34,19 +34,14 @@ aside.sidebar {
     list-style: none;
     padding: .5em 0;
     margin: 0;
-    border-bottom: 1px solid $sidebar-border;
+    /*border-bottom: 1px solid $sidebar-border;*/
     @extend .side-shadow-border;
     p:last-child {
       margin-bottom: 0;
     }
   }
-  a {
-    color: inherit;
-    @include transition(color .5s);
-  }
-  &:hover a {
-    color: $sidebar-link-color;
-    &:hover { color: $sidebar-link-color-hover; }
+  a:hover {
+    color: #BD1550;
   }
 }
 .aside-alt-link {

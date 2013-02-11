@@ -3,8 +3,9 @@ layout: post
 title: "scala-ssh - Remote shell access via SSH"
 date: 2012-12-11 21:34
 comments: true
-categories: [ssh]
-gitHubUrl: https://github.com/sirthias/scala-ssh
+categories: 
+gitHubUser: sirthias
+gitHubProject: scala-ssh
 ---
 
 [scala-ssh](https://github.com/sirthias/scala-ssh) provides remote shell access via SSH for your Scala applications.

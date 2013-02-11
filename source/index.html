@@ -8,6 +8,16 @@ layout: default
   {% assign content = post.content %}
     <article>
       {% include article.html %}
+      <footer>
+    	<p class="meta">
+      		{% include post/author.html %}
+      		{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+      		{% include post/categories.html %}
+    	</p>
+    	{% unless page.sharing == false %}
+      		{% include post/sharing.html %}
+	    {% endunless %}
+  	  </footer>
     </article>
   {% endfor %}
   <div class="pagination">

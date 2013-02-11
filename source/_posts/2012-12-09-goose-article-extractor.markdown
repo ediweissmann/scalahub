@@ -3,8 +3,9 @@ layout: post
 title: "Goose - Article extractor"
 date: 2012-12-09 22:15
 comments: true
-categories: [github, article extraction]
-gitHubUrl: https://github.com/jiminoc/goose
+categories: 
+gitHubUser: jiminoc
+gitHubProject: goose
 projectHomepage:
 ---
 

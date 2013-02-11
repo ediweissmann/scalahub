@@ -1,10 +1,18 @@
-body > nav {
+body > header > nav {
   position: relative;
   background-color: $nav-bg;
+  text-transform: uppercase;
+  /*
   @include background($nav-bg-front, $nav-bg-back);
   border: {
     top: 1px solid $nav-border-top;
-    bottom: 1px solid $nav-border-bottom; }
+    bottom: 1px solid $nav-border-bottom; 
+    left: 1px solid $nav-border-left;
+    right: 1px solid $nav-border-right;  
+  }
+  @include border-radius(2em);
+  */
+  display: inline;
   padding-top: .35em;
   padding-bottom: .35em;
   form {
@@ -37,7 +45,7 @@ body > nav {
   }
   ul { display: none; }
   @media only screen and (min-width: 550px) {
-    font-size: .9em;
+    font-size: .8em;
     ul {
       @include horizontal-list(0);
       float: left;
@@ -53,22 +61,23 @@ body > nav {
       margin: 0;
     }
     a {
-      @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
-      font-family: $sans;
-      text-shadow: lighten($nav-bg, 12) 0 1px;
+      color: #bbb;
+      font-family: "PT Sans", sans;
       float: left;
       text-decoration: none;
       font-size: 1.1em;
-      padding: .1em 0;
+      padding: .1em .5em;
       line-height: 1.5em;
+    }
+    a:hover {
+    	color: #fff;
+    	background-color: darken($link-color-hover, 20);
+    	@include border-radius(1.5em);
     }
     li + li {
       border-left: 1px solid $nav-border-left;
-      margin-left: .8em;
-      a {
-        padding-left: .8em;
-        border-left: 1px solid $nav-border-right;
-      }
+      margin-left: .2em;
+      padding-left: .2em;
     }
     form {
       float: right;

@@ -3,7 +3,9 @@ layout: post
 title: "Travis CI - Continuous integration for your open source scala project"
 date: 2012-12-10 20:32
 comments: true
-categories: [continuous integration]
+categories: 
+gitHubUser: travis-ci
+gitHubProject: travis-ci
 projectHomepage: http://travis-ci.org/
 ---
 
