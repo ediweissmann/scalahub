@@ -1,0 +1,3 @@
+[submodule ".themes/mirella"]
+	path = .themes/mirella
+	url = git://github.com/ediweissmann/mirella.git
